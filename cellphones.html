@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cellphonepage</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <style>
+        #nav {
+	display: flex;
+	justify-content: space-between;
+    background-color: #0046be;
+}
+#nav h3{
+    text-decoration: underline;
+}
+#nav h3:hover{
+    color:#ffe000
+}
+.nav2 p:hover{
+
+    text-decoration: underline;
+    color:#ffe000
+}
+.topdeals>div:hover{
+background-color: #0046be;
+color:white;
+}
+#flex{
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+}
+#nav{
+    border:1px solid #7b9fdd
+}
+#nav > div:nth-child(2){
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    color:white;
+}
+.nav2 {
+    display:flex;
+    justify-content: space-around;
+    color:white;
+    background-color: #0046be;
+    padding:10px;
+    
+}
+.container{
+            width:100%;
+            height:100vh;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper-wrapper{
+            width:100%;
+            margin:auto;
+        }
+        .swiper{
+            width:100%;
+           height:70%;
+margin: auto;
+background-color: #e1d7d7;
+        }
+        .swiper-slide img{
+            /* width:100%; */
+            height:70%;
+        }
+        .swiper-slide div{
+            padding:20px;
+            width:100%;
+            margin:auto;
+            
+        }
+        .swiper-slide{
+            display: flex;
+            /* width:90%;
+            margin:auto; */
+        }
+        .swiper .swiper-button-prev ,.swiper .swiper-button-next{
+            color:#fff;
+        }
+        .swiper .swiper-pagination-bullet-active{
+background: #fff;
+        }
+        .topdeals{
+            display:grid;
+grid-template-columns: repeat(5,1fr);
+gap:10px;
+text-align: center;
+margin-top: 20px;
+
+        }
+        .topdeals>div{
+            border:1px solid skyblue;
+          
+        }
+        .iphone{
+            color:white;
+            display:flex;
+            background-color: black;
+            padding:10px;
+        }
+        .iphone h1{
+            color:#b06bc4
+        }
+        .iphone button{
+            padding:5px;
+            border-radius: 7px;
+            background-color: #fff;
+            color:#0046be;
+            border:none;
+        }
+        .iphone button:hover{
+            background-color: #0046be;
+            color: #fff;
+            border:1px solid white
+        }
+        .iphone>div:nth-child(1){
+            margin-left: 8%;
+        }
+        .iphone img{
+            width:100%;
+        }
+        #picon{
+            width:2%;
+          margin-left: 30px;
+        }
+        .shopnow{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .shopnow img{
+            margin-top: 20px;
+            width:50%;
+
+        }
+        .shopnow button{
+            background-color: #0046be;
+            color:white;
+            border:none;
+            padding:5px;
+            border-radius:7px;
+        }
+        .shopnow button:hover{
+            background-color: yellow;
+            color:#0046be;
+            border:1px solid #0046be
+        }
+    </style>
+</head>
+<body>
+    <div id="bgblue">
+        <div id="nav">
+            <div id="flex">
+                <div ><img style="width:80px" src="./Indic Designs Creative Logo.png" alt="logo"></div>
+                <div style="font-size:30px; margin-top:7px;color:white">menu</div>
+                <div style="margin-top:10px;width:70%;display:flex;"><input style="width:100%;padding:5px;margin-bottom: 10px;border-radius: 5px;" type="text" placeholder="Search Best Buy"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div>
+               <h3>Login</h3>
+               <h3>Signup</h3> 
+               <h3>Cart</h3>
+            </div>
+        </div>
+
+        <!-- nav2 -->
+        <div class="nav2">
+            <p>Hot deals</p>
+            <p>Top deals</p>
+            <p>Deals of the day</p>
+            <p>Credit cards</p>
+            <p>Gift cards</p>
+            <p>Gift ideas</p>
+            <p>Account</p>
+            <p>More</p>
+        </div>
+        <!-- swipper -->
+        <div id="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494230_sd.jpg;maxHeight=240;maxWidth=240" alt="">
+                <p>Samsung - Galaxy Tab S8 Ultra - 14.6" 256GB - Wi-Fi - with S-Pen - Graphite</p>
+            <h3>$849.99</h3></div>
+            <div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420869_sd.jpg;maxHeight=240;maxWidth=240" alt="">
+                <p>Samsung - Galaxy Tab S8 Ultra - 14.6" 256GB - Wi-Fi - with S-Pen - Graphite</p>
+            <h3>$849.99</h3></div><div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502236_sd.jpg;maxHeight=240;maxWidth=240" alt="">
+                <p>Samsung - Galaxy Tab S8 Ultra - 14.6" 256GB - Wi-Fi - with S-Pen - Graphite</p>
+            <h3>$849.99</h3></div><div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6512/6512622_sd.jpg;maxHeight=240;maxWidth=240" alt="">
+                <p>Samsung - Galaxy Tab S8 Ultra - 14.6" 256GB - Wi-Fi - with S-Pen - Graphite</p>
+            <h3>$849.99</h3></div></div>
+                  <div class="swiper-slide"><div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502236_sd.jpg;maxHeight=240;maxWidth=240" alt="">
+                    <p>Samsung - Galaxy Tab S8 Ultra - 14.6" 256GB - Wi-Fi - with S-Pen - Graphite</p>
+                <h3>$849.99</h3></div><div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501585_sd.jpg;maxHeight=240;maxWidth=240" alt="">
+                    <p>Samsung - Galaxy Tab S8 Ultra - 14.6" 256GB - Wi-Fi - with S-Pen - Graphite</p>
+                <h3>$849.99</h3></div><div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494230_sd.jpg;maxHeight=240;maxWidth=240" alt="">
+                    <p>Samsung - Galaxy Tab S8 Ultra - 14.6" 256GB - Wi-Fi - with S-Pen - Graphite</p>
+                <h3>$849.99</h3></div><div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501593_sd.jpg;maxHeight=240;maxWidth=240" alt="">
+                    <p>Samsung - Galaxy Tab S8 Ultra - 14.6" 256GB - Wi-Fi - with S-Pen - Graphite</p>
+                <h3>$849.99</h3></div></div>
+                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                
+              </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+         const swiper = new Swiper('.swiper', {
+            autoplay: {
+    delay:2000,
+    disableOnInteraction:false,
+  },
+          loop: true,
+        
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+          },
+        
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        
+         
+        });
+
+        
+            </script>
+        <!-- </body>
+        </html> -->
+        
+
+        <div class="topdeals">
+            <div ><p>Iphone</p></div>
+            <div><p>Samsung</p></div>
+            <div><p>Prepaid cell phones</p></div>
+            <div><p>Unlocked Cellphones</p></div>
+            <div><p>More deals</p></div>
+        </div>
+       <h2>Iphone</h2>
+      <div class="iphone">
+        <div>
+            <p id="picon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><h2>Iphone 14 Pro</h2></p>
+            <h1>Pro.Beyond.</h1>
+            <p>Save up to $1,100 with qualified activation
+                and trade-in of iPhone 12 or newer.</p>
+            <button>Shop Now</button>
+        </div>
+        <div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/SOL-100825_iPhone14Pro-XL-e5b49e99-ad2e-4315-ba36-2d094cb14bbb.jpg" alt=""></div>
+      </div>
+      <div class="shopnow">
+        <div><img src="https://www.apple.com/in/iphone/home/images/meta/iphone__ky2k6x5u6vue_og.png" alt=""><h3></h3><p></p><button>Shop Now</button></div>
+        <div><img src="https://e7.pngegg.com/pngimages/492/922/png-clipart-logo-verizon-wireless-brand-font-telecom-tower-text-logo.png" alt=""><h3></h3><p></p><button>Shop Now</button></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZabv-uAI_8MsxxzOgxDjHdm8L20Dk-CQVxw&usqp=CAU" alt=""><h3></h3><p></p><button>Shop Now</button></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/AT%26T_logo_2016.svg/2560px-AT%26T_logo_2016.svg.png" alt=""><h3></h3><p></p><button>Shop Now</button></div>
+      </div>
+<div id="container"></div>
+</body>
+</html>
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page2</title>
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+            
+        }
+        #container>div{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            text-align: center;
+           
+        }
+        #image{
+        width:50%;
+       }
+       #btn{
+        background-color: rgb(244, 244, 16);
+        color:#4d96e3;
+        padding:5px ;
+        border:none;
+        border-radius: 7px;
+        margin-bottom:10px;
+       }
+       #desc{
+        color:#4d96e3
+       }
+       
+       
+    </style>
+</head>
+<body>
+    <h1>videogames & consoles</h1>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    let data=[
+        // videogames & consoles
+        {
+            id:1,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510817cv20d.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Microsoft - Xbox Series S 512 GB All-Digital (Disc-Free Gaming) - Holiday Console - White.",
+            category:"videogames"
+        },
+        {
+            id:2,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6369/6369453_rd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Microsoft - Xbox Series S 512 GB All-Digital (Disc-Free Gaming) - Holiday Console - White.",
+            category:"videogames"
+        },
+        {
+            id:3,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6520/6520395_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Lenovo - Chromebook 3 11.6" ,
+            category:"videogames"
+        },
+        {
+            id:4,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5892/5892993_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"MacBook Air 13.6 videogames - Apple M2 chip - 8GB Memory - 256GB SSD (Latest Model) - Midnight",
+            category:"videogames"
+        },
+        {
+            id:5,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6512/6512372_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Microsoft - Surface Pro 7+ - 12.3” Touch Screen – Intel Core i5 – 8GB Memory – 256GB SSD with Black Type Cover (Latest Model) - Platinum",
+            category:"videogames"
+        },
+        {
+            id:6,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463683_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Microsoft - Xbox Series S 512 GB All-Digital (Disc-Free Gaming) - Holiday Console - White.",
+            category:"videogames"
+        },
+        {
+            id:7,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470670_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Microsoft - Xbox Series S 512 GB All-Digital (Disc-Free Gaming) - Holiday Console - White.",
+            category:"videogames"
+        },
+        {
+            id:8,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500890_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Microsoft - Xbox Series S 512 GB All-Digital (Disc-Free Gaming) - Holiday Console - White.",
+            category:"videogames"
+        },
+// Toys & games
+{
+            id:9,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509845_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:10,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464801_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:11,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509833_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:12,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6516/6516187_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:13,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6511/6511372_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:14,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509844_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:15,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418704_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        // health & fitness
+        {
+            id:16,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6405/6405080_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Schwinn - 270 Recumbent Exercise Bike - Black",
+            category:"health & fitness"
+        },
+        {
+            id:17,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6349/6349559_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Schwinn - 270 Recumbent Exercise Bike - Black",
+            category:"health & fitness"
+        },
+        {
+            id:18,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451177ld.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Schwinn - 270 Recumbent Exercise Bike - Black",
+            category:"health & fitness"
+        },
+        {
+            id:19,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5821/5821705_rd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Schwinn - 270 Recumbent Exercise Bike - Black",
+            category:"health & fitness"
+        },
+        {
+            id:20,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517223_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Schwinn - 270 Recumbent Exercise Bike - Black",
+            category:"health & fitness"
+        },
+        {
+            id:21,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6405/6405082_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Schwinn - 270 Recumbent Exercise Bike - Black",
+            category:"health & fitness"
+        },
+        {
+            id:22,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427196_rd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Schwinn - 270 Recumbent Exercise Bike - Black",
+            category:"health & fitness"
+        },
+
+    ]
+
+    function appendData(data){
+    let cont=document.getElementById("container")
+    cont.innerHTML=null
+    data.forEach(function(el,index){
+        let card=document.createElement("div")
+        let img=document.createElement("img")
+        img.src=el.Image
+        let price =document.createElement("h3")
+        price.textContent=el.price
+        let description=document.createElement("p")
+        description.textContent=el.description
+        description.id="desc"
+        let category=document.createElement("h4")
+        category.textContent=el.category
+        let btn=document.createElement("button")
+        btn.textContent="Add To Cart"
+        btn.id="btn"
+        card.append(img,description,price,category,btn)
+        cont.append(card);
+    })
+
+}
+appendData(data)
+</script>

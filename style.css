@@ -3,6 +3,17 @@
 	justify-content: space-between;
     background-color: #0046be;
 }
+#nav h3{
+    text-decoration: underline;
+}
+#nav h3:hover{
+    color:#ffe000
+}
+.nav2 p:hover{
+
+    text-decoration: underline;
+    color:#ffe000
+}
 #flex{
     width:50%;
     display:flex;
@@ -22,6 +33,7 @@
     justify-content: space-around;
     color:white;
     background-color: #0046be;
+    padding:10px;
     
 }
 .category{
@@ -32,6 +44,7 @@
     justify-content: space-around;
     color:white;
     background-color: #2a6aca;
+    margin-top:15px;
    
 }
 .category button{
@@ -40,28 +53,35 @@
     border:none;
     padding:7px;
 border-radius: 5px;
+margin-top: 15px;
 }
 #catimages{
     display:grid;
     grid-template-columns: repeat(6,1fr);
     gap:10px;
     background-color: #2a6aca;
-    margin-top:5%
+    margin-top:5%;
+    margin-bottom: 5%;
 }
 
 #catimages div{
-  /* border-radius: 60%; */
+  border-radius: 20px;
    width:70%;
    background-color: antiquewhite;
+   margin:auto;
 
 }
 #catimages>div img{
-width:100%;
+width:60%;
+margin-left:14%;
 }
 #catimages h3{
     text-align: center;
     color:rgb(115, 114, 114);
 }
+/* #catimages>img{
+    width:40%;
+} */
 #bgblue{
     background-color: #2a6aca;
 }
@@ -120,6 +140,7 @@ width:100%;
    
     width:100%;
     margin-left: 20%;
+    padding:5%;
 }
 .totaltech>div:nth-child(2){
     margin-top: 3%;
@@ -175,6 +196,7 @@ font-size: 20px;
     margin-top:30px;
     display:flex;
     justify-content: space-around;
+    padding:15px;
 }
 .giftsnav button{
     border:1px solid #0457c8;
@@ -250,6 +272,14 @@ color:#4d96e3;
     background-color: #ebebeb;
 
 }
+.giftideas h3{
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.giftideas h3:hover{
+    color:lightseagreen
+}
 .secgiftideas{
     background-color: #ebebeb;
 }
@@ -305,7 +335,7 @@ color:#4d96e3;
     gap:30px;
    margin-bottom: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 4%;
 }
 .giftideas img{
     width:80%;
@@ -318,6 +348,8 @@ color:#4d96e3;
     gap:10px;
     background-color: #0046be;
     color:white;
+    padding:7px;
+    margin-top: 4%;
 
 }
 .apply>div:nth-child(1){
@@ -374,37 +406,47 @@ text-align: center;
    
 }
 #icons{
-   
+   margin-left: 10%;
     width:80%;
+    border:1px solid #4d96e3;
+    padding:7px;
 }
 .footer{
     margin-top: 5%;
-    border:1px solid blue;
+    border:0px solid blue;
     display:flex;
     justify-content: space-between;
+    background-color: #f0f2f4;
+    padding:5%;
 }
 .footer>div:nth-child(1){
-    border:1px solid red;
+    border:0px solid red;
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap:20px;
     background-color: #f0f2f4;
     margin-left: 5%;
+    padding:30px;
 }
 .footer>div:nth-child(1) p{
     color:#0457c8;
 }
 .footer>div:nth-child(2){
-    
-    border:1px solid green;
+    padding:7px;
+    background-color: white;
+    border:0px solid green;
     width:30%;
     height:auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
 }
 #signup p{
     color:#0457c8;
 }
 #signup input{
     padding:7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #signup button{
     padding:7px;
@@ -417,12 +459,286 @@ text-align: center;
 
 }
 #signup button:hover{
-    background-color: #042051b2;
-    color: white;
-    border:1px solid white
+   background-color: #ffe000;
+    color: #0046be;
+    border:1px solid #ffe000
 }
 #icons{
+    margin-top: 5%;
     display:grid;
     grid-template-columns: repeat(5,1fr);
     gap:30px;
+}
+*{
+            margin: 0%;
+            padding:0%;
+            box-sizing:border-box;
+        }
+        .container{
+            width:100%;
+            height:100vh;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper-wrapper{
+            width:100%;
+            margin:auto;
+        }
+        .swiper{
+            width:100%;
+           height:70%;
+margin: auto;
+background-color: #e1d7d7;
+        }
+        .swiper-slide img{
+            /* width:100%; */
+            height:70%;
+        }
+        .swiper-slide div{
+            padding:20px;
+            width:100%;
+            margin:auto;
+            
+        }
+        .swiper-slide{
+            display: flex;
+            /* width:90%;
+            margin:auto; */
+        }
+        .swiper .swiper-button-prev ,.swiper .swiper-button-next{
+            color:#fff;
+        }
+        .swiper .swiper-pagination-bullet-active{
+background: #fff;
+        }
+        img{
+            width:80%;
+        }
+        .samsung{
+            display:flex;
+            justify-content: space-around;
+        }
+        /* body{
+            background-color: lightcoral;
+        } */
+        #container p{
+color:#4d96e3
+        }
+
+    @media all and (min-width:600px) and (max-width:1000px){
+        #flex{
+            width:100%;
+
+        }
+        #nav{
+            display:flex;
+            flex-direction: column;
+        }
+        .nav2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .category>div:nth-child(1){
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+width:60%;
+margin:auto;
+/* margin-right:10%;  */
+        }
+        #catimages{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+        }
+        .outlet{
+            display:flex;
+            flex-direction: column;
+            margin-bottom:3%;
+
+        }
+        .totaltech{
+            margin-bottom:3%;
+            display:flex;
+            flex-direction: column;
+            padding:10px;
+            width:50%;
+            margin:auto;
+
+        }
+        .totaltech>div:nth-child(1){
+   
+            width:100%;
+            
+            padding:5%;
+        }
+        .totaltech>div:nth-child(2){
+            margin-top: 3%;
+             width:20%;
+            margin-left: 20%;
+        
+        }
+     .inspiredDeals{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+     }
+        .featured{
+           
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .giftsnav{
+            display:flex;
+            flex-direction: column;
+        }
+        .giftsnav button{
+           width:20%;
+        }
+        .ready{
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .youmay{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .swiper{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+        }
+        .featuredproducts>div:nth-child(2){
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .giftideas{
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+         }
+         .apply{
+            display:flex;
+            flex-direction: column;
+         }
+         .adverstisement{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+         }
+         .footer{
+            display:flex;
+            flex-direction: column;
+         }
+         #signup{
+            width:100%;
+            margin-left:10%;
+         }
+
+    }
+
+    @media all and (min-width:100px) and (max-width:600px){
+        .category>div:nth-child(1){
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width:60%;
+            /* margin-right:10%;  */
+            margin:auto;
+    }
+    #flex{
+        width:100%;
+
+    }
+    #nav{
+        display:flex;
+        flex-direction: column;
+    }
+    .nav2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    #catimages{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;
+    }
+    .outlet{
+        margin-bottom:3%;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .totaltech{
+        margin-bottom:3%;
+        display:flex;
+        flex-direction: column;
+
+    }
+    .totaltech>div:nth-child(1){
+   
+        width:100%;
+        
+        padding:5%;
+    }
+    .totaltech>div:nth-child(2){
+        margin-top: 3%;
+         width:20%;
+        margin-left: 20%;
+    
+    }
+    .inspiredDeals{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+     }
+     .featured{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+.giftsnav{
+    display:flex;
+    flex-direction: column;
+}
+.giftsnav button{
+    width:20%;
+ }
+ 
+ .ready{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.youmay{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.swiper{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.featuredproducts>div:nth-child(2){
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px
+}
+ .giftideas{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+ }
+ .apply{
+    display:flex;
+    flex-direction: column;
+ }
+ .adverstisement{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+ .footer{
+    display:flex;
+    flex-direction: column;
+ }
+ #signup{
+    width:100%;
+    margin-left:10%;
+ }
+
 }

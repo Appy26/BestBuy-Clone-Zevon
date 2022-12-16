@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page4</title>
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+            
+        }
+        #container>div{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            text-align: center;
+            
+        }
+        #image{
+        width:50%;
+       }
+       #btn{
+        background-color: rgb(244, 244, 16);
+        color:#4d96e3;
+        padding:5px ;
+        border:none;
+        border-radius: 7px;
+        margin-bottom:10px;
+       }
+       #desc{
+        color:#4d96e3
+       }
+       </style>
+</head>
+<body>
+    <h1>Printers</h1>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    // printers
+      let data =[
+        {
+            id:1,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519951_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"HP - Deskjet 4133e Wireless All-In-One Inkjet Printer with 6 months of Instant Ink included from HP+ - White.",
+            category:"printers"
+        },
+        {
+            id:2,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477031_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"HP - Deskjet 4133e Wireless All-In-One Inkjet Printer with 6 months of Instant Ink included from HP+ - White.",
+            category:"printers"
+        },
+        {
+            id:3,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425303_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"HP - Deskjet 4133e Wireless All-In-One Inkjet Printer with 6 months of Instant Ink included from HP+ - White.",
+            category:"printers"
+        },
+        {
+            id:4,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6393/6393542_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"HP - Deskjet 4133e Wireless All-In-One Inkjet Printer with 6 months of Instant Ink included from HP+ - White.",
+            category:"printers"
+        },
+        {
+            id:5,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502673_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"HP - Deskjet 4133e Wireless All-In-One Inkjet Printer with 6 months of Instant Ink included from HP+ - White.",
+            category:"printers"
+        },
+        {
+            id:6,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470010_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"HP - Deskjet 4133e Wireless All-In-One Inkjet Printer with 6 months of Instant Ink included from HP+ - White.",
+            category:"printers"
+        },
+        {
+            id:7,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427551_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"HP - Deskjet 4133e Wireless All-In-One Inkjet Printer with 6 months of Instant Ink included from HP+ - White.",
+            category:"printers"
+        },
+        {
+            id:8,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402923_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"HP - Deskjet 4133e Wireless All-In-One Inkjet Printer with 6 months of Instant Ink included from HP+ - White.",
+            category:"printers"
+        },
+
+    //    electric transformation
+        {
+            id:9,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509951_rd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"NIU - KQi3 Pro Foldable Electric Kick Scooter w/ 31 mi Max Operating Range & 20 mph Max Speed - Black",
+             category:"electric transformation"
+        },
+        {
+            id:10,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525597cv12d.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"NIU - KQi3 Pro Foldable Electric Kick Scooter w/ 31 mi Max Operating Range & 20 mph Max Speed - Black",
+             category:"electric transformation"
+        },
+        {
+            id:11,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525597cv12d.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"NIU - KQi3 Pro Foldable Electric Kick Scooter w/ 31 mi Max Operating Range & 20 mph Max Speed - Black",
+             category:"electric transformation"
+        },
+        {
+            id:12,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525597cv12d.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"NIU - KQi3 Pro Foldable Electric Kick Scooter w/ 31 mi Max Operating Range & 20 mph Max Speed - Black",
+             category:"electric transformation"
+        },
+        {
+            id:13,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525597cv12d.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"NIU - KQi3 Pro Foldable Electric Kick Scooter w/ 31 mi Max Operating Range & 20 mph Max Speed - Black",
+             category:"electric transformation"
+        },
+        {
+            id:14,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525597cv12d.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"NIU - KQi3 Pro Foldable Electric Kick Scooter w/ 31 mi Max Operating Range & 20 mph Max Speed - Black",
+             category:"electric transformation"
+        },
+        {
+            id:15,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525597cv12d.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"NIU - KQi3 Pro Foldable Electric Kick Scooter w/ 31 mi Max Operating Range & 20 mph Max Speed - Black",
+             category:"electric transformation"
+        },
+
+        // tablets and Ereaders
+        // {
+        //     id:16,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/top-MMT-607527-Save300GalaxyS8_DER-38dfe9fd-48c8-4d9f-92a8-6b5f99a60d76.jpg;maxHeight=302;maxWidth=504",
+        //     price:60000,
+        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+        //      category:"tablets"
+        // },
+        // {
+        //     id:17,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4901/4901811_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+        //      category:"tablets"
+        // },
+        // {
+        //     id:18,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5200/5200904_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+        //      category:"tablets"
+        // },
+        // {
+        //     id:19,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464584_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+        //      category:"tablets"
+        // },
+        // {
+        //     id:20,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461952_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+        //      category:"tablets"
+        // },
+        // {
+        //     id:21,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340356_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+        //      category:"tablets"
+        // },
+        // {
+        //     id:22,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340385_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+        //      category:"tablets"
+        // },
+
+        // // Wearable technology
+        // {
+        //     id:23,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464594_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+        //      category:"watches"
+        // },
+        // {
+        //     id:24,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510876_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+        //      category:"watches"
+        // },
+        // {
+        //     id:25,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510882_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+        //      category:"watches"
+        // },
+        // {
+        //     id:26,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464608_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+        //      category:"watches"
+        // },
+        // {
+        //     id:27,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+        //      category:"watches"
+        // },
+        // {
+        //     id:28,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+        //      category:"watches"
+        // },
+        // {
+        //     id:29,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+        //      category:"watches"
+        // },
+        // {
+        //     id:30,
+        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_sd.jpg;maxHeight=200;maxWidth=300",
+        //     price:60000,
+        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+        //      category:"watches"
+        // },
+
+    ]
+    function appendData(data){
+    let cont=document.getElementById("container")
+    cont.innerHTML=null
+    data.forEach(function(el,index){
+        let card=document.createElement("div")
+        let img=document.createElement("img")
+        img.src=el.Image
+        let price =document.createElement("h3")
+        price.textContent=el.price
+        let description=document.createElement("p")
+        description.textContent=el.description
+        description.id="desc"
+        let category=document.createElement("h4")
+        category.textContent=el.category
+        let btn=document.createElement("button")
+        btn.textContent="Add To Cart"
+        btn.id="btn"
+        card.append(img,description,price,category,btn)
+        cont.append(card);
+    })
+
+}
+appendData(data)
+
+</script>
