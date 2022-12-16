@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+            
+        }
+        #container>div{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            text-align: center;
+            
+        }
+       #image{
+        width:50%;
+       }
+       #btn{
+        background-color: rgb(244, 244, 16);
+        color:#4d96e3;
+        padding:5px ;
+        border:none;
+        border-radius: 7px;
+        margin-bottom:10px;
+       }
+       #desc{
+        color:#4d96e3
+       }
+       
+    </style>
+</head>
+<body>
+   <h1> Laptops</h1>
+   <div id="container"></div>
+</body>
+</html>
+<script>
+    let data =[
+        {
+            id:1,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6501269-MMT-545157-0523-f4752dee-6c11-484d-a6ae-dadbcae80c2d.jpg;maxHeight=302;maxWidth=504",
+            price:40000,
+            description:"Save up to $500 on select Windows laptops.",
+            category:"Laptop"
+        },
+        {
+            id:2,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6450858-macbook-MMT-519474-0301-1cb17c96-9355-45cb-a68c-12c1cc221c15.jpg;maxHeight=302;maxWidth=504",
+            price:60000,
+            description:"Save up to $500 on select Windows laptops.",
+            category:"Laptop"
+        },
+        {
+            id:3,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500335_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Lenovo - Chromebook 3 11.6" ,
+            category:"Laptop"
+        },
+        {
+            id:4,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494644_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"MacBook Air 13.6 Laptop - Apple M2 chip - 8GB Memory - 256GB SSD (Latest Model) - Midnight",
+            category:"Laptop"
+        },
+        {
+            id:5,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6520/6520385_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Microsoft - Surface Pro 7+ - 12.3” Touch Screen – Intel Core i5 – 8GB Memory – 256GB SSD with Black Type Cover (Latest Model) - Platinum",
+            category:"Laptop"
+        },
+        {
+            id:6,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6498/6498805_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Save up to $500 on select Windows laptops.",
+            category:"Laptop"
+        },
+        {
+            id:7,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6501269-MMT-545157-0523-f4752dee-6c11-484d-a6ae-dadbcae80c2d.jpg;maxHeight=302;maxWidth=504",
+            price:40000,
+            description:"Save up to $500 on select Windows laptops.",
+            category:"Laptop"
+        },
+        {
+            id:8,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501274_sd.jpg;maxHeight=200;maxWidth=300",
+            price:40000,
+            description:"Save up to $500 on select Windows laptops.",
+            category:"Laptop"
+        },
+
+        // tvs and projectors
+        {
+            id:9,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501916_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"LG - 70 Class NanoCell 75UQA Series LED 4K UHD Smart webOS TV",
+             category:"tv"
+        },
+        {
+            id:10,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517096_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"LG - 75 Class 83 Series QNED Mini-LED 4K UHD Smart webOS TV",
+             category:"tv"
+        },
+        {
+            id:11,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514057_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"LG - 70 Class NanoCell 75UQA Series LED 4K UHD Smart webOS TV",
+             category:"tv"
+        },
+        {
+            id:12,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501916_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"LG - 70 Class NanoCell 75UQA Series LED 4K UHD Smart webOS TV",
+             category:"tv"
+        },
+        {
+            id:13,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470258_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"LG - 70 Class NanoCell 75UQA Series LED 4K UHD Smart webOS TV",
+             category:"tv"
+        },
+        {
+            id:14,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501505_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"LG - 70 Class NanoCell 75UQA Series LED 4K UHD Smart webOS TV",
+             category:"tv"
+        },
+        {
+            id:15,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401722_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"LG - 70 Class NanoCell 75UQA Series LED 4K UHD Smart webOS TV",
+             category:"tv"
+        },
+
+        // tablets and Ereaders
+        {
+            id:16,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/top-MMT-607527-Save300GalaxyS8_DER-38dfe9fd-48c8-4d9f-92a8-6b5f99a60d76.jpg;maxHeight=302;maxWidth=504",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:17,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4901/4901811_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:18,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5200/5200904_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:19,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464584_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:20,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461952_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:21,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340356_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:22,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340385_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+
+        // Wearable technology
+        {
+            id:23,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464594_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:24,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510876_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:25,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510882_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:26,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464608_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:27,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:28,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:29,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:30,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+
+    ]
+function appendData(data){
+    let cont=document.getElementById("container")
+    cont.innerHTML=null
+    data.forEach(function(el,index){
+        let card=document.createElement("div")
+        let img=document.createElement("img")
+        img.src=el.Image
+        img.id="image"
+        let price =document.createElement("h3")
+        price.textContent=el.price
+        let description=document.createElement("p")
+        description.textContent=el.description
+        description.id="desc"
+        let category=document.createElement("h4")
+        category.textContent=el.category
+        let btn=document.createElement("button")
+        btn.textContent="Add To Cart"
+        btn.id="btn"
+        card.append(img,description,price,category,btn)
+        cont.append(card);
+    })
+
+}
+appendData(data)
+</script>
