@@ -31,9 +31,92 @@
        #desc{
         color:#4d96e3
        }
+       @media all and (min-width:800px) and (max-width:1000px){
+#container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+       }
+
+       @media all and (min-width:500px) and (max-width:800px){
+#container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+       }
+
+       @media all and (min-width:100px) and (max-width:500px){
+#container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+       }
+       #nav {
+	display: flex;
+	justify-content: space-between;
+    background-color: #0046be;
+   
+}
+#nav h3{
+    text-decoration: underline;
+    color:white;
+}
+#nav h3:hover{
+    color:#ffe000
+}
+#flex{
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+}
+#nav{
+    border:1px solid #7b9fdd
+}
+#nav > div:nth-child(2){
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    color:white;
+}
+.nav2 {
+    display:flex;
+    justify-content: space-around;
+    color:white;
+    background-color: #0046be;
+    padding:10px;
+    
+}
        </style>
 </head>
 <body>
+    <div id="nav">
+        <div id="flex">
+            <div ><a href="index.html" target="blank"><img style="width:80px" src="./Indic Designs Creative Logo.png" alt="logo"></a></div>
+            <div style="font-size:30px; margin-top:7px;color:white">menu</div>
+            <div style="margin-top:10px;width:70%;display:flex;"><input style="width:100%;padding:5px;margin-bottom: 10px;border-radius: 5px;" type="text" placeholder="Search Best Buy"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        
+        <div>
+           <a href="signin.html" target="blank"><h3>Login</h3></a>
+           <a href="login.html" target="blank"><h3>Signup</h3> </a>
+           <h3>Cart</h3>
+        </div>
+    </div>
+
+     <!-- nav2 -->
+     <div class="nav2">
+        <p>Hot deals</p>
+        <p>Top deals</p>
+        <p>Deals of the day</p>
+        <p>Credit cards</p>
+        <p>Gift cards</p>
+        <p>Gift ideas</p>
+        <p>Account</p>
+        <p>More</p>
+    </div>
     <h1>Printers</h1>
     <div id="container"></div>
 </body>
@@ -150,113 +233,113 @@
         },
 
         // tablets and Ereaders
-        // {
-        //     id:16,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/top-MMT-607527-Save300GalaxyS8_DER-38dfe9fd-48c8-4d9f-92a8-6b5f99a60d76.jpg;maxHeight=302;maxWidth=504",
-        //     price:60000,
-        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
-        //      category:"tablets"
-        // },
-        // {
-        //     id:17,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4901/4901811_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
-        //      category:"tablets"
-        // },
-        // {
-        //     id:18,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5200/5200904_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
-        //      category:"tablets"
-        // },
-        // {
-        //     id:19,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464584_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
-        //      category:"tablets"
-        // },
-        // {
-        //     id:20,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461952_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
-        //      category:"tablets"
-        // },
-        // {
-        //     id:21,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340356_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
-        //      category:"tablets"
-        // },
-        // {
-        //     id:22,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340385_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
-        //      category:"tablets"
-        // },
+        {
+            id:16,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/top-MMT-607527-Save300GalaxyS8_DER-38dfe9fd-48c8-4d9f-92a8-6b5f99a60d76.jpg;maxHeight=302;maxWidth=504",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:17,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4901/4901811_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:18,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5200/5200904_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:19,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464584_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:20,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461952_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:21,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340356_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
+        {
+            id:22,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6340/6340385_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+             category:"tablets"
+        },
 
-        // // Wearable technology
-        // {
-        //     id:23,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464594_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
-        //      category:"watches"
-        // },
-        // {
-        //     id:24,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510876_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
-        //      category:"watches"
-        // },
-        // {
-        //     id:25,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510882_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
-        //      category:"watches"
-        // },
-        // {
-        //     id:26,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464608_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
-        //      category:"watches"
-        // },
-        // {
-        //     id:27,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
-        //      category:"watches"
-        // },
-        // {
-        //     id:28,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
-        //      category:"watches"
-        // },
-        // {
-        //     id:29,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
-        //      category:"watches"
-        // },
-        // {
-        //     id:30,
-        //     image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_sd.jpg;maxHeight=200;maxWidth=300",
-        //     price:60000,
-        //     description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
-        //      category:"watches"
-        // },
+        // Wearable technology
+        {
+            id:23,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464594_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:24,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510876_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:25,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510882_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:26,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464608_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:27,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:28,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:29,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476116_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:30,
+            image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_sd.jpg;maxHeight=200;maxWidth=300",
+            price:60000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
 
     ]
     function appendData(data){

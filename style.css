@@ -2,9 +2,11 @@
 	display: flex;
 	justify-content: space-between;
     background-color: #0046be;
+   
 }
 #nav h3{
     text-decoration: underline;
+    color:white;
 }
 #nav h3:hover{
     color:#ffe000
