@@ -137,7 +137,11 @@ margin-top: 20px;
             grid-template-columns: repeat(4,1fr);
             gap:10px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
+        }
+        .shopnow>div{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            padding:10px;
         }
         .shopnow img{
             margin-top: 20px;
@@ -156,6 +160,250 @@ margin-top: 20px;
             color:#0046be;
             border:1px solid #0046be
         }
+
+        .shopnow1{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .shopnow1>div{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            padding:10px;
+        }
+        .shopnow1 img{
+            margin-top: 20px;
+            width:50%;
+
+        }
+        .shopnow1 button{
+            background-color: #0046be;
+            color:white;
+            border:none;
+            padding:5px;
+            border-radius:7px;
+        }
+        .shopnow1 button:hover{
+            background-color: yellow;
+            color:#0046be;
+            border:1px solid #0046be
+        }
+        .iphone1{
+            margin-top: 30px;
+            color:black;
+            display:flex;
+            background-color:#e0e8f2;
+            padding:10px;
+        }
+        .iphone1 h1{
+            color:#b06bc4
+        }
+        .iphone1 button{
+            padding:5px;
+            border-radius: 7px;
+            background-color: #0046be;
+            color:#fff;
+            border:none;
+        }
+        .iphone1 button:hover{
+            background-color:white;
+            color: #0046be;
+            border:1px solid white
+        }
+        .iphone1>div:nth-child(1){
+            margin-left: 8%;
+        }
+        .iphone1 img{
+            width:100%;
+        }
+
+        .iphone2{
+            margin-top: 30px;
+            color:black;
+            display:flex;
+            background-color:#a0aab7;
+            padding:10px;
+        }
+        .iphone2 h1{
+            color:#b06bc4
+        }
+        .iphone2 button{
+            padding:5px;
+            border-radius: 7px;
+            background-color: #0046be;
+            color:#fff;
+            border:none;
+        }
+        .iphone2 button:hover{
+            background-color:white;
+            color: #0046be;
+            border:1px solid white
+        }
+        .iphone2>div:nth-child(1){
+            margin-left: 8%;
+        }
+        .iphone2 img{
+            width:100%;
+        }
+        .footer{
+    margin-top: 5%;
+    border:0px solid blue;
+    display:flex;
+    justify-content: space-between;
+    background-color: #f0f2f4;
+    padding:5%;
+}
+.footer>div:nth-child(1){
+    border:0px solid red;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    background-color: #f0f2f4;
+    margin-left: 5%;
+    padding:30px;
+}
+.footer>div:nth-child(1) p{
+    color:#0457c8;
+}
+.footer>div:nth-child(2){
+    padding:7px;
+    background-color: white;
+    border:0px solid green;
+    width:30%;
+    height:auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+}
+#signup p{
+    color:#0457c8;
+}
+#signup input{
+    padding:7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#signup button{
+    padding:7px;
+    width:30%;
+    background-color: #0046be;
+    color:white;
+    border:none;
+    border-radius: 7px;
+
+
+}
+#signup button:hover{
+   background-color: #ffe000;
+    color: #0046be;
+    border:1px solid #ffe000
+}
+#icons{
+    margin-top: 5%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:30px;
+}
+        @media all and (min-width:600px) and (max-width:1000px){
+        #flex{
+            width:100%;
+}
+        #nav{
+            display:flex;
+            flex-direction: column;
+        }
+        .nav2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .swiper-slide{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20%;
+}
+.topdeals{
+  display:grid  ;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+}
+.iphone{
+    display:flex; 
+   /* flex-wrap: wrap; */
+   flex-direction: column;
+
+    }
+    .iphone1{
+    display:flex; 
+   /* flex-wrap: wrap; */
+   flex-direction: column;
+}
+.iphone2{
+    display:flex; 
+   /* flex-wrap: wrap; */
+   flex-direction: column;
+}
+.shopnow{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.shopnow1{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer{
+            display:flex;
+            flex-direction: column;
+         }
+         #signup{
+            width:100%;
+            margin-left:10%;
+         }
+    @media all and (min-width:100px) and (max-width:600px){
+.swiper-slide{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20%;
+}
+.topdeals{
+  display:grid  ;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+}
+.iphone{
+    display:flex; 
+   /* flex-wrap: wrap; */
+   flex-direction: column;
+
+    }
+    .iphone1{
+    display:flex; 
+   /* flex-wrap: wrap; */
+   flex-direction: column;
+}
+.iphone2{
+    display:flex; 
+   /* flex-wrap: wrap; */
+   flex-direction: column;
+}
+
+    }
+    .shopnow{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.shopnow1{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer{
+            display:flex;
+            flex-direction: column;
+         }
+         #signup{
+            width:100%;
+            margin-left:10%;
+         }
+}
     </style>
 </head>
 <body>
@@ -269,12 +517,125 @@ margin-top: 20px;
         <div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/SOL-100825_iPhone14Pro-XL-e5b49e99-ad2e-4315-ba36-2d094cb14bbb.jpg" alt=""></div>
       </div>
       <div class="shopnow">
-        <div><img src="https://www.apple.com/in/iphone/home/images/meta/iphone__ky2k6x5u6vue_og.png" alt=""><h3></h3><p></p><button>Shop Now</button></div>
-        <div><img src="https://e7.pngegg.com/pngimages/492/922/png-clipart-logo-verizon-wireless-brand-font-telecom-tower-text-logo.png" alt=""><h3></h3><p></p><button>Shop Now</button></div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZabv-uAI_8MsxxzOgxDjHdm8L20Dk-CQVxw&usqp=CAU" alt=""><h3></h3><p></p><button>Shop Now</button></div>
-        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/AT%26T_logo_2016.svg/2560px-AT%26T_logo_2016.svg.png" alt=""><h3></h3><p></p><button>Shop Now</button></div>
+        <div><img src="https://www.apple.com/in/iphone/home/images/meta/iphone__ky2k6x5u6vue_og.png" alt=""><h3>iPhone 14 and iPhone 14 Plus
+            Big and bigger.</h3><p>Save up to $800 with qualified activation and trade-in of iPhone 12 or newer.</p><button>Shop Now</button></div>
+        <div><img src="https://e7.pngegg.com/pngimages/492/922/png-clipart-logo-verizon-wireless-brand-font-telecom-tower-text-logo.png" alt=""><h3>iPhone 14 Pro and iPhone 14 Pro Max
+            Save up to $1,100</h3><p>with trade-in of your old or damaged phone and qualified activation for Verizon. Save up to $1,000 with qualified trade-in, </p><button>Shop Now</button></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZabv-uAI_8MsxxzOgxDjHdm8L20Dk-CQVxw&usqp=CAU" alt=""><h3>iPhone 14 Pro and iPhone 14 Pro Max
+            Save up to $1,100</h3><p>on iPhone 14 Series with qualified activation for T-Mobile and trade-in of an eligible phone.iPhone 14 Series with qualified activation </p><button>Shop Now</button></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/AT%26T_logo_2016.svg/2560px-AT%26T_logo_2016.svg.png" alt=""><h3>iPhone 14
+            Save up to $1,000</h3><p>on the iPhone 14 Series with qualified activation and trade-in for AT&T.</p><button>Shop Now</button></div>
       </div>
-<div id="container"></div>
+      <div class="shopnow1">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTEtYjQnL8j-yY9nbFIrgItgqkVWgcDvDs0A&usqp=CAU" alt=""><h3>iPhone 14 and iPhone 14 Plus
+            Big and bigger.</h3><p>Save up to $800 with qualified activation and trade-in of iPhone 12 or newer.</p><button>Shop Now</button></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpqu8mLuvqkEaZ6-3zGdk6EmPSPDPOq3ETQ&usqp=CAU" alt=""><h3>iPhone 14 Pro and iPhone 14 Pro Max
+            Save up to $1,100</h3><p>with trade-in of your old or damaged phone and qualified activation for Verizon. Save up to $1,000 with qualified trade-in, </p><button>Shop Now</button></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvIm62qrKb4pEABTq75mddxlOTleEHMgeDQ&usqp=CAU" alt=""><h3>iPhone 14 Pro and iPhone 14 Pro Max
+            Save up to $1,100</h3><p>on iPhone 14 Series with qualified activation for T-Mobile and trade-in of an eligible phone.iPhone 14 Series with qualified activation </p><button>Shop Now</button></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqdLRUwhdsj_HWuTcuco5qR2SWcWfqV11QTQ&usqp=CAU" alt=""><h3>iPhone 14
+            Save up to $1,000</h3><p>on the iPhone 14 Series with qualified activation and trade-in for AT&T.</p><button>Shop Now</button></div>
+      </div>
+      <div class="iphone1">
+        <div>
+           <h2>Samsung</h2>
+            <h1>Samsung Galaxy
+                S22 Series.</h1>
+            <p>Save up to $1,100 with qualified activation
+                and trade-in of iPhone 12 or newer.</p>
+            <button>Learn More</button>
+        </div>
+        <div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/custom_fluid_lg_mmt-536006-420ec948-02cb-446a-89de-d8423c854f86.jpg" alt=""></div>
+    </div>
+    <div class="iphone2">
+        <div>
+           <h2>Samsung</h2>
+            <h1>Samsung Galaxy
+                S22 Series.</h1>
+            <p>Save up to $1,100 with qualified activation
+                and trade-in of iPhone 12 or newer.</p>
+            <button>Learn More</button>
+        </div>
+        <div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/custom_fluid_lg_mmt-571902-bb5892e2-05f4-43b4-98ec-f35f63b01d4d.jpg" alt=""></div>
+      </div>
+      <div class="footer">
+        <div>
+            <div><h2>Order & Purchases</h2>
+                <p>Check Order Status</p>
+                <p>Shipping, Delivery & Pickup</p>
+                <p>Returns & Exchanges</p>
+                <p>Price Match Guarantee</p>
+                <p>Product Recalls</p>
+                <p>Trade-In Program</p>
+                <p>Gift Cards</p>
+            </div>
+            <div>
+                <h2>Support & Services</h2>
+                <p>Visit our Support Center</p>
+                <p>Shop with an Expert</p>
+                <p>Schedule a Service</p>
+                <p>Manage an Appointment</p>
+                <p>Protection & Support Plans</p>
+                <p>Haul Away & Recycling</p>
+                <p>Contact Us</p>
+            </div>
+            <div>
+                <h2>Partnerships</h2>
+                <p>Affiliate Program</p>
+                <p>Advertise with Us</p>
+                <p>Developers</p>
+                <p>Best Buy Health</p>
+                <p>
+                    Best Buy Education</p>
+                <p>Best Buy Business</p>
+            </div>
+            <div>
+                <h2>Payment Options</h2>
+                <p>My Best Buy® Credit Card</p>
+                <p>Pay Your Bill at Citibank</p>
+                <p>Lease to Own</p>   
+            </div>
+            <div>
+                <h2>Rewards & Membership</h2>
+                <p>Best Buy Totaltech</p>
+                <p>My Best Buy</p>
+                <p>View Points & Certificates</p>
+                <p>Member Offers</p> 
+            </div>
+            <div>
+                <h2>About Best Buy</h2>
+                <p>Corporate Informationh</p>
+                <p>Careers</p>
+                <p>Corporate Responsibility & Sustainability</p>
+                <p>Discover & Learn</p> 
+            </div>
+        </div>
+    
+        <!-- signup div -->
+        <div id="signup">
+            <p>Sign in or Create Account</p>
+            <div><h2>Get the latest deals and more</h2>
+            <input type="text" placeholder="Enter email address">
+        <button>Sign Up</button></div>
+        <div><h1>Best Buy app</h1><p>Learn more ></p></div>
+    
+        <!-- ICONS -->
+        <div id="icons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+        <!-- twitter -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+        <!-- instagram -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
+    
+        <!-- pinterest -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+    
+        <!-- youtube -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    
+    </div>
+        </div>
+    </div>
+
 </body>
 </html>
 

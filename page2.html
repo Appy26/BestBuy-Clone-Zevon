@@ -31,11 +31,94 @@
        #desc{
         color:#4d96e3
        }
+       @media all and (min-width:100px) and (max-width:600px){
+#container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+
+       }
        
+       @media all and (min-width:600px) and (max-width:800px){
+#container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+       }
+       @media all and (min-width:800px) and (max-width:1000px){
+#container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+       }
+ 
+       #nav {
+	display: flex;
+	justify-content: space-between;
+    background-color: #0046be;
+   
+}
+#nav h3{
+    text-decoration: underline;
+    color:white;
+}
+#nav h3:hover{
+    color:#ffe000
+}
+#flex{
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+}
+#nav{
+    border:1px solid #7b9fdd
+}
+#nav > div:nth-child(2){
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    color:white;
+}
+.nav2 {
+    display:flex;
+    justify-content: space-around;
+    color:white;
+    background-color: #0046be;
+    padding:10px;
+    
+}  
+        */
        
     </style>
 </head>
 <body>
+    <div id="nav">
+        <div id="flex">
+            <div ><a href="index.html" target="blank"><img style="width:80px" src="./Indic Designs Creative Logo.png" alt="logo"></a></div>
+            <div style="font-size:30px; margin-top:7px;color:white">menu</div>
+            <div style="margin-top:10px;width:70%;display:flex;"><input style="width:100%;padding:5px;margin-bottom: 10px;border-radius: 5px;" type="text" placeholder="Search Best Buy"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        
+        <div>
+           <a href="signin.html" target="blank"><h3>Login</h3></a>
+           <a href="login.html" target="blank"><h3>Signup</h3> </a>
+           <h3>Cart</h3>
+        </div>
+    </div>
+     <!-- nav2 -->
+     <div class="nav2">
+        <p>Hot deals</p>
+        <p>Top deals</p>
+        <p>Deals of the day</p>
+        <p>Credit cards</p>
+        <p>Gift cards</p>
+        <p>Gift ideas</p>
+        <p>Account</p>
+        <p>More</p>
+    </div>
     <h1>videogames & consoles</h1>
     <div id="container"></div>
 </body>
