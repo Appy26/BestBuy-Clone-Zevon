@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signin</title>
+    <title>signuppage</title>
     <style>
         body{
             background-color:lightseagreen ;
         }
-       #signin{
-       
-width:30%;
-background-color: lightyellow;
-margin:auto;
-text-align: center;
-border:1px solid blue;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         .signup{
+      
+       width:30%;
+       background-color: lightyellow;
+       margin:auto;
+       text-align: center;
+       border:1px solid blue;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         }
+         .signup button{
+        border:0px solid green;
+       padding:8px;
+       width:50%;
+       background-color: blue;
+       margin-bottom: 20px;
+       border-radius: 7px;
+       color:white;
+       }
+       .signup button:hover{
+        background-color: rgb(35, 35, 113);
+       color:white;
+       border:1px solid rgb(35, 35, 113);
        }
        #email{
         border:0px solid blue;
@@ -38,53 +52,39 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         color:black;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
        }
-       #signin button{
-        border:0px solid green;
-       padding:8px;
-       width:50%;
-       background-color: blue;
-       color:white;
-       }
-       #signin button:hover{
-        background-color: rgb(35, 35, 113);
-       color:white;
-       border:1px solid rgb(35, 35, 113);
-       }
-       #sign{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:10px;
-        width:50%;
-        border:0px solid blue;
-        margin:auto;
-        
-       }
-       #sign input{
-        padding:5px;
-        text-align: center;
-        font-size: large;
-        border:1px solid blue;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-       }
-       #signin h1{
-        color:rgb(55, 0, 255)
-       }
     </style>
 </head>
 <body>
-    <div id="signin">
-        <h1>Sign In to Best Buy</h1>
-        <div ><img style="width:80px" src="./Indic Designs Creative Logo.png" alt="logo"></div>
-       <div id="email"> <input type="text" placeholder="Email Address">
-        <input type="text" placeholder="Password"></div>
-        <p>Forgot Your password?</p>
-        <button>Sign In</button>
-        <p>-----------or----------</p>
-     <div id="sign"> <input type="text" placeholder="Sign In With a Passkey">
-        <input type="text" placeholder="Sign In With Apple">
-        <input type="text" placeholder="Sign In With Google"></div>
-      <p>By continuing you agree to our Terms and Conditions, our Privacy Policy, and the My Best Buy® Program Terms.</p>
-   <h4>Don't have an account? Create an account</h4>
+    <div class="signup">
+          <h1>Sign In to Best Buy</h1>
+            <div ><img style="width:80px" src="./Indic Designs Creative Logo.png" alt="logo"></div>
+           <div id="email"> <input id="em"type="text" placeholder="Email Address">
+            <input id="pass"type="text" placeholder="Password"></div>
+            <p>Forgot Your password?</p>
+            <button id="si">Sign In</button>
     </div>
 </body>
 </html>
+<script>
+    let si=document.getElementById("si")
+    si.addEventListener("click",signIn)
+let data=JSON.parse(localStorage.getItem("auth"))||[]
+    function signIn(){
+        let em=document.getElementById("em").value;
+        let pass=document.getElementById("pass").value;
+        let flag=false;
+        console.log(em,pass)
+        data.forEach(function(el){
+            if(el.em==em && el.pass==pass){
+                flag=true;
+            }
+
+        })
+        if(flag){
+            alert("Login Successfull")
+            window.location.href="index.html"
+        }else{
+            alert("Wrong Credentials")
+        }
+    }
+</script>

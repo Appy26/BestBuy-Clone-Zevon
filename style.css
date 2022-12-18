@@ -4,6 +4,36 @@
     background-color: #0046be;
    
 }
+#carticon{
+    width:20px;
+}
+#cartt{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:0px;
+}
+#main{
+    position: relative;
+    display: inline-block;
+}
+#ddc{
+    display: none;
+    position: absolute;
+    text-decoration: underline;
+}
+#ddc h5{
+    color:blue;
+
+}
+#main:hover #ddc{
+    /* width: 115%; */
+    display: block;
+    color: grey;
+    border-radius: 6px;
+    border: 2px solid blue;
+    /* padding: 5px; */
+    background-color: lightgoldenrodyellow;
+}
 #nav h3{
     text-decoration: underline;
     color:white;

@@ -88,21 +88,59 @@
     background-color: #0046be;
     padding:10px;
     
-}    
+}  
+#main{
+    position: relative;
+    display: inline-block;
+}
+#ddc{
+    display: none;
+    position: absolute;
+    text-decoration: underline;
+}
+#ddc h5{
+    color:blue;
+
+}
+#main:hover #ddc{
+    /* width: 115%; */
+    display: block;
+    color: grey;
+    border-radius: 6px;
+    border: 2px solid blue;
+    /* padding: 5px; */
+    background-color: lightgoldenrodyellow;
+}  
     </style>
 </head>
 <body>
     <div id="nav">
         <div id="flex">
             <div ><a href="index.html" target="blank"><img style="width:80px" src="./Indic Designs Creative Logo.png" alt="logo"></a></div>
-            <div style="font-size:30px; margin-top:7px;color:white">menu</div>
+            <div id="main">
+                <div style="font-size:30px; margin-top:7px;color:white">menu</div>
+                <div  id="ddc">
+                    <h2>Deals</h2>
+                    <h2>Support & Services</h2>
+                    <h2>Brands</h2>
+                    <h2>Featured</h2>
+                    <h5>Shop By Department</h5>
+                   <a href="page4.html"> <h2>Appliances</h2></a>
+                    <a href="page1.html"><h2>TV & Home Theater</h2></a>
+                   <a href="page1.html" target="blank"> <h2>Computers & Tablets</h2></a>
+                   <a href="page3.html"> <h2>Cameras,Camcorders & Drones</h2></a>
+                    <a href="cellphones.html"><h2>Cell phones</h2></a>
+                    <a href="page3.html"><h2>Audio</h2></a>
+                    <a href="page2.html"><h2>Video Games</h2></a>
+                </div>
+              </div>
             <div style="margin-top:10px;width:70%;display:flex;"><input style="width:100%;padding:5px;margin-bottom: 10px;border-radius: 5px;" type="text" placeholder="Search Best Buy"><i class="fa-solid fa-magnifying-glass"></i></div>
         </div>
         
         <div>
            <a href="signin.html" target="blank"><h3>Login</h3></a>
            <a href="login.html" target="blank"><h3>Signup</h3> </a>
-           <h3>Cart</h3>
+           <a href="cart.html"><h3>Cart</h3></a>
         </div>
     </div>
 
@@ -117,7 +155,16 @@
         <p>Account</p>
         <p>More</p>
     </div>
-    <h1>Headphones</h1>
+    <button id="lth">Sort Low To High</button>
+<button id="htl">Sort High To Low</button>
+<select id="priority">
+    <option value="">Select Priority</option>
+    <option value="headphones">headphones</option>
+    <option value="gaming">gaming </option>
+    <option value="speakers">speakers</option>
+    <option value="cameras">cameras</option>
+  </select>
+    
     <div id="container"></div>
 </body>
 </html>
@@ -134,49 +181,49 @@
         {
             id:2,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6383/6383124_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:56000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
              category:"headphones"
         },
         {
             id:3,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397391_rd.jpg;maxHeight=200;maxWidth=300",
-            price:40000,
+            price:48000,
             description:"Bose - QuietComfort 45 Wireless Noise Cancelling Over-the-Ear Headphones - Triple Black" ,
              category:"headphones"
         },
         {
             id:4,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6495/6495841cv12d.jpg;maxHeight=200;maxWidth=300",
-            price:40000,
+            price:50000,
             description:"Bose - QuietComfort 45 Wireless Noise Cancelling Over-the-Ear Headphones - Triple Black",
              category:"headphones"
         },
         {
             id:5,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505727_rd.jpg;maxHeight=200;maxWidth=300",
-            price:40000,
+            price:67000,
             description:"Bose - QuietComfort 45 Wireless Noise Cancelling Over-the-Ear Headphones - Triple Black",
              category:"headphones"
         },
         {
             id:6,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510541_sd.jpg;maxHeight=200;maxWidth=300",
-            price:40000,
+            price:43000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
              category:"headphones"
         },
         {
             id:7,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6422/6422916_sd.jpg;maxHeight=200;maxWidth=300",
-            price:40000,
+            price:53000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
              category:"headphones"
         },
         {
             id:8,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501274_sd.jpg;maxHeight=200;maxWidth=300",
-            price:40000,
+            price:34000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
              category:"headphones"
         },
@@ -185,49 +232,49 @@
         {
             id:9,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502006_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:37000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
             id:10,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507926_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:28000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
             id:11,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6486/6486485_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:47000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
             id:12,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5642/5642401_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:45000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
             id:13,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450800cv1d.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:28000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
             id:14,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6347/6347286_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:56000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
             id:15,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492576_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:67000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
@@ -236,49 +283,49 @@
         {
             id:16,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6498/6498848_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:56000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
             id:17,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6342/6342750_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:45000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
             id:18,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6480/6480937_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:39000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
             id:19,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501482_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:65000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
             id:20,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450295_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:62000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
             id:21,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505159_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:45000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
             id:22,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5023/5023610_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:74000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
@@ -287,56 +334,56 @@
         {
             id:23,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6213/6213100_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:85000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
             id:24,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437928_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:34000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
             id:25,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323759_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:54000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
             id:26,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6442/6442031cv13d.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:65000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
             id:27,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6435/6435268_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:62000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
             id:28,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6415/6415933_sd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:56000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
             id:29,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485762cv11d.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:57000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
             id:30,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514926_rd.jpg;maxHeight=200;maxWidth=300",
-            price:60000,
+            price:78000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
@@ -359,11 +406,71 @@
         let btn=document.createElement("button")
         btn.textContent="Add To Cart"
         btn.id="btn"
+        btn.addEventListener("click",()=>{
+AddToCart(el)
+})
         card.append(img,description,price,category,btn)
         cont.append(card);
     })
 
 }
 appendData(data)
+let lth=document.getElementById("lth")
+lth.addEventListener("click",lowtohigh)
 
+function lowtohigh(){
+    data=data.sort(function(a,b){
+        return a.price-b.price
+    })
+    appendData(data)
+}
+let htl=document.getElementById("htl")
+htl.addEventListener("click",hightolow)
+
+function hightolow(){
+    data=data.sort(function(a,b){
+        return b.price-a.price
+    })
+    appendData(data)
+}
+
+let new_data=[]
+let priority=document.getElementById("priority")
+priority.addEventListener("change",filtered)
+function filtered(){
+    let selected=document.getElementById("priority").value
+if(selected=="headphones"){
+    new_data=data.filter(function(el){
+        return el.category==selected
+    })
+    appendData(new_data)
+}
+else if(selected=="gaming"){
+    new_data=data.filter(function(el){
+        return el.category==selected
+    })
+    appendData(new_data)
+}
+else if(selected=="speakers"){
+    new_data=data.filter(function(el){
+        return el.category==selected
+    })
+    appendData(new_data)
+}
+else if(selected=="cameras"){
+    new_data=data.filter(function(el){
+        return el.category==selected
+    })
+    appendData(new_data)
+}
+else if(selected==""){
+   
+    appendData(data)
+}
+}
+let cartArray=JSON.parse(localStorage.getItem("cart"))||[]
+function AddToCart(el){
+    cartArray.push(el)
+    localStorage.setItem("cart",JSON.stringify(cartArray))
+}
 </script>
