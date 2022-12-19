@@ -4,57 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page3</title>
+    <title>shopnow</title>
     <style>
-        #container{
-            display:grid;
-            grid-template-columns: repeat(4,1fr);
-            gap:20px;
-            
-        }
-        #container>div{
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            text-align: center;
-           
-        }
-        #image{
-        width:50%;
-       }
-       #btn{
-        background-color: rgb(244, 244, 16);
-        color:#4d96e3;
-        padding:5px ;
-        border:none;
-        border-radius: 7px;
-        margin-bottom:10px;
-       }
-       #desc{
-        color:#4d96e3
-       }
-       @media all and (min-width:800px) and (max-width:1000px){
-#container{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:10px;
-}
-       }
-
-       @media all and (min-width:500px) and (max-width:800px){
-#container{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:10px;
-}
-       }
-
-       @media all and (min-width:100px) and (max-width:500px){
-#container{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:10px;
-}
-       }
-       #nav {
+            #nav {
 	display: flex;
 	justify-content: space-between;
     background-color: #0046be;
@@ -88,16 +40,16 @@
     background-color: #0046be;
     padding:10px;
     
-}  
-#main{
-    position: relative;
-    display: inline-block;
-}
+}    
 #btn:hover{
 background-color: rgb(210, 9, 9);
 color:white;
 border:white;
 } 
+#main{
+    position: relative;
+    display: inline-block;
+}
 #ddc{
     display: none;
     position: absolute;
@@ -115,7 +67,76 @@ border:white;
     border: 2px solid blue;
     /* padding: 5px; */
     background-color: lightgoldenrodyellow;
-}  
+}
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+        }
+         .container>div{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            text-align: center;
+           
+        }
+        #btn:hover{
+background-color: rgb(210, 9, 9);
+color:white;
+border:white;
+} 
+        #image{
+        width:50%;
+       }
+       #btn{
+        background-color: rgb(205, 7, 7);
+        color:white;
+        padding:5px ;
+        border:none;
+        border-radius: 7px;
+        margin-bottom:10px;
+       }
+     
+       #desc{
+        color:#4d96e3
+       }
+       @media all and (min-width:100px) and (max-width:600px){
+.container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+
+       }
+       
+       @media all and (min-width:600px) and (max-width:800px){
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+#nav{
+    display:flex;
+    flex-wrap: wrap;
+}
+.nav2{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+       }
+       @media all and (min-width:800px) and (max-width:1000px){
+.container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+#nav{
+    display:flex;
+    flex-wrap: wrap;
+}
+.nav2{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+       }
     </style>
 </head>
 <body>
@@ -139,6 +160,7 @@ border:white;
                     <a href="page2.html"><h2>Video Games</h2></a>
                 </div>
               </div>
+    
             <div style="margin-top:10px;width:70%;display:flex;"><input style="width:100%;padding:5px;margin-bottom: 10px;border-radius: 5px;" type="text" placeholder="Search Best Buy"><i class="fa-solid fa-magnifying-glass"></i></div>
         </div>
         
@@ -148,7 +170,7 @@ border:white;
            <a href="cart.html"><h3>Cart</h3></a>
         </div>
     </div>
-
+    
      <!-- nav2 -->
      <div class="nav2">
         <p>Hot deals</p>
@@ -160,124 +182,227 @@ border:white;
         <p>Account</p>
         <p>More</p>
     </div>
-    <button id="lth">Sort Low To High</button>
-<button id="htl">Sort High To Low</button>
-<select id="priority">
-    <option value="">Select Priority</option>
-    <option value="headphones">headphones</option>
-    <option value="gaming">gaming </option>
-    <option value="speakers">speakers</option>
-    <option value="cameras">cameras</option>
-  </select>
     
-    <div id="container"></div>
+    <button id="lth">Sort Low To High</button>
+    <button id="htl">Sort High To Low</button>
+        <select id="priority">
+              <option value="">Select Priority</option>
+              <option value="watches">watches</option>
+              <option value="headphones">headphones </option>
+              <option value="toys">toys</option>
+              <option value="gaming">gaming</option>
+              <option value="speakers">speakers</option>
+              <option value="cameras">cameras</option>
+            </select>
+   <div class="container">
+   
+   </div> 
+ 
 </body>
 </html>
 <script>
-      let data =[
+let data=[
+{
+            id:1,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464594_sd.jpg;maxHeight=200;maxWidth=300",
+            price:56000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:2,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510876_sd.jpg;maxHeight=200;maxWidth=300",
+            price:84000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:3,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510882_sd.jpg;maxHeight=200;maxWidth=300",
+            price:52000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:4,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464608_sd.jpg;maxHeight=200;maxWidth=300",
+            price:63000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:5,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464592_sd.jpg;maxHeight=200;maxWidth=300",
+            price:83000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+        {
+            id:6,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426002_sd.jpg;maxHeight=200;maxWidth=300",
+            price:74000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+       
+        {
+            id:8,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514032_sd.jpg;maxHeight=200;maxWidth=300",
+            price:10000,
+            description:"Samsung - Galaxy Watch4 Aluminum Smartwatch 44mm BT - Black",
+             category:"watches"
+        },
+
         // headphones
         {
-            id:1,
+            id:9,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6471/6471291_sd.jpg;maxHeight=200;maxWidth=300",
             price:40000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
             category:"headphones"
         },
         {
-            id:2,
+            id:10,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6383/6383124_sd.jpg;maxHeight=200;maxWidth=300",
             price:56000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
              category:"headphones"
         },
         {
-            id:3,
+            id:11,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397391_rd.jpg;maxHeight=200;maxWidth=300",
             price:48000,
             description:"Bose - QuietComfort 45 Wireless Noise Cancelling Over-the-Ear Headphones - Triple Black" ,
              category:"headphones"
         },
         {
-            id:4,
+            id:12,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6495/6495841cv12d.jpg;maxHeight=200;maxWidth=300",
             price:50000,
             description:"Bose - QuietComfort 45 Wireless Noise Cancelling Over-the-Ear Headphones - Triple Black",
              category:"headphones"
         },
         {
-            id:5,
+            id:13,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505727_rd.jpg;maxHeight=200;maxWidth=300",
             price:67000,
             description:"Bose - QuietComfort 45 Wireless Noise Cancelling Over-the-Ear Headphones - Triple Black",
              category:"headphones"
         },
         {
-            id:6,
+            id:14,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510541_sd.jpg;maxHeight=200;maxWidth=300",
             price:43000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
              category:"headphones"
         },
         {
-            id:7,
+            id:15,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6422/6422916_sd.jpg;maxHeight=200;maxWidth=300",
             price:53000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
              category:"headphones"
         },
         {
-            id:8,
+            id:16,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501274_sd.jpg;maxHeight=200;maxWidth=300",
             price:34000,
             description:"Samsung - Galaxy Buds Live True Wireless Earbud Headphones - Black",
              category:"headphones"
         },
-
-        // pc gaming
         {
-            id:9,
+            id:17,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509845_sd.jpg;maxHeight=200;maxWidth=300",
+            price:18000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:18,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464801_sd.jpg;maxHeight=200;maxWidth=300",
+            price:42000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:19,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509833_sd.jpg;maxHeight=200;maxWidth=300",
+            price:25000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:20,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6516/6516187_sd.jpg;maxHeight=200;maxWidth=300",
+            price:34000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:21,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6511/6511372_sd.jpg;maxHeight=200;maxWidth=300",
+            price:65000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:22,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509844_sd.jpg;maxHeight=200;maxWidth=300",
+            price:42000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:23,
+            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418704_sd.jpg;maxHeight=200;maxWidth=300",
+            price:34000,
+            description:"Fisher-Price - DJ Bouncin' Beats - Multi",
+            category:"toys"
+        },
+        {
+            id:24,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502006_sd.jpg;maxHeight=200;maxWidth=300",
             price:37000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
-            id:10,
+            id:25,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507926_sd.jpg;maxHeight=200;maxWidth=300",
             price:28000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
-            id:11,
+            id:26,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6486/6486485_sd.jpg;maxHeight=200;maxWidth=300",
             price:47000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
-            id:12,
+            id:27,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5642/5642401_sd.jpg;maxHeight=200;maxWidth=300",
             price:45000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
-            id:13,
+            id:28,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450800cv1d.jpg;maxHeight=200;maxWidth=300",
             price:28000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
-            id:14,
+            id:29,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6347/6347286_sd.jpg;maxHeight=200;maxWidth=300",
             price:56000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
              category:"gaming"
         },
         {
-            id:15,
+            id:30,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492576_sd.jpg;maxHeight=200;maxWidth=300",
             price:67000,
             description:"MSI - Aegis RS Gaming Desktop - Intel i7-12700KF - 16 GB Memory - NVIDIA GeForce RTX 3060 Ti Up to 8 GB - 1 TB SSD - Black",
@@ -286,121 +411,119 @@ border:white;
 
     //    soundbars and speakers
         {
-            id:16,
+            id:31,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6498/6498848_sd.jpg;maxHeight=200;maxWidth=300",
             price:56000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
-            id:17,
+            id:22,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6342/6342750_sd.jpg;maxHeight=200;maxWidth=300",
             price:45000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
-            id:18,
+            id:23,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6480/6480937_sd.jpg;maxHeight=200;maxWidth=300",
             price:39000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
-            id:19,
+            id:24,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501482_sd.jpg;maxHeight=200;maxWidth=300",
             price:65000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
-            id:20,
+            id:25,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450295_sd.jpg;maxHeight=200;maxWidth=300",
             price:62000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
         {
-            id:21,
+            id:26,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505159_sd.jpg;maxHeight=200;maxWidth=300",
             price:45000,
             description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
              category:"speakers"
         },
-        {
-            id:22,
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5023/5023610_sd.jpg;maxHeight=200;maxWidth=300",
-            price:74000,
-            description:"LG - 3.1 Channel Soundbar with Wireless Subwoofer and DTS Virtual:X - Black",
-             category:"speakers"
-        },
+       
 
     //    camcorders
         {
-            id:23,
+            id:28,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6213/6213100_sd.jpg;maxHeight=200;maxWidth=300",
             price:85000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
-            id:24,
+            id:29,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437928_sd.jpg;maxHeight=200;maxWidth=300",
             price:34000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
-            id:25,
+            id:30,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323759_sd.jpg;maxHeight=200;maxWidth=300",
             price:54000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
-            id:26,
+            id:31,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6442/6442031cv13d.jpg;maxHeight=200;maxWidth=300",
             price:65000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
-            id:27,
+            id:31,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6435/6435268_sd.jpg;maxHeight=200;maxWidth=300",
             price:62000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
-            id:28,
+            id:32,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6415/6415933_sd.jpg;maxHeight=200;maxWidth=300",
             price:56000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
-            id:29,
+            id:33,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485762cv11d.jpg;maxHeight=200;maxWidth=300",
             price:57000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
         {
-            id:30,
+            id:34,
             Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6514/6514926_rd.jpg;maxHeight=200;maxWidth=300",
             price:78000,
             description:"Sony - Alpha a7 III Mirrorless [Video] Camera with FE 28-70 mm F3.5-5.6 OSS Lens - Black",
              category:"cameras"
         },
 
-    ]
-    function appendData(data){
-    let cont=document.getElementById("container")
+
+]
+
+
+function appendData(data){
+    let cont=document.querySelector(".container")
     cont.innerHTML=null
     data.forEach(function(el,index){
         let card=document.createElement("div")
         let img=document.createElement("img")
         img.src=el.Image
+        img.id="image"
         let price =document.createElement("h3")
         price.textContent=el.price
         let description=document.createElement("p")
@@ -409,11 +532,14 @@ border:white;
         let category=document.createElement("h4")
         category.textContent=el.category
         let btn=document.createElement("button")
-        btn.textContent="Add To Cart"
+        btn.textContent="Buy Now"
+      btn.addEventListener("click",shopNow)
+
         btn.id="btn"
         btn.addEventListener("click",()=>{
 AddToCart(el)
 })
+
         card.append(img,description,price,category,btn)
         cont.append(card);
     })
@@ -438,13 +564,30 @@ function hightolow(){
     })
     appendData(data)
 }
-
 let new_data=[]
 let priority=document.getElementById("priority")
 priority.addEventListener("change",filtered)
 function filtered(){
     let selected=document.getElementById("priority").value
-if(selected=="headphones"){
+if(selected=="Laptop"){
+    new_data=data.filter(function(el){
+        return el.category==selected
+    })
+    appendData(new_data)
+}
+else if(selected=="watches"){
+    new_data=data.filter(function(el){
+        return el.category==selected
+    })
+    appendData(new_data)
+}
+else if(selected=="headphones"){
+    new_data=data.filter(function(el){
+        return el.category==selected
+    })
+    appendData(new_data)
+}
+else if(selected=="toys"){
     new_data=data.filter(function(el){
         return el.category==selected
     })
@@ -475,7 +618,12 @@ else if(selected==""){
 }
 let cartArray=JSON.parse(localStorage.getItem("cart"))||[]
 function AddToCart(el){
+    console.log(el)
     cartArray.push(el)
     localStorage.setItem("cart",JSON.stringify(cartArray))
+alert("Product added successfully")
+}
+function shopNow(){
+    window.location.href="checkout.html"
 }
 </script>

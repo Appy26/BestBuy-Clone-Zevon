@@ -87,6 +87,12 @@
 border-radius: 5px;
 margin-top: 15px;
 }
+.category button:hover{
+    background-color:red;
+    color:white;
+    border:none;
+    border-radius: 5px;
+}
 #catimages{
     display:grid;
     grid-template-columns: repeat(6,1fr);
@@ -235,7 +241,7 @@ font-size: 20px;
     color:#0457c8;
     margin-top: 20px;
     height: 40px;
-    width:7%;
+    width:100%;
     padding:2px;
     border-radius: 5px;
 }

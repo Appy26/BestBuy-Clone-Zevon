@@ -17,6 +17,11 @@
             text-align: center;
            
         }
+        #btn:hover{
+background-color: rgb(210, 9, 9);
+color:white;
+border:white;
+} 
         #image{
         width:50%;
        }
@@ -34,7 +39,7 @@
        @media all and (min-width:100px) and (max-width:600px){
 #container{
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap:10px;
 }
 
@@ -43,7 +48,7 @@
        @media all and (min-width:600px) and (max-width:800px){
 #container{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap:10px;
 }
        }
@@ -412,6 +417,7 @@ function AddToCart(el){
     console.log(el)
     cartArray.push(el)
     localStorage.setItem("cart",JSON.stringify(cartArray))
+    alert("Product added successfully")
 }
 
 </script>
