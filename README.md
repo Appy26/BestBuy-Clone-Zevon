@@ -7,7 +7,7 @@ Zevon is an online Ecommerce Website which is providing all Electronics Devices 
 
 **To see the live site click the below link.**
 
-https://zevoncw.netlify.app/
+https://legendary-pixie-b10c6d.netlify.app/
 
 ## Tech stacks
 <ul>
